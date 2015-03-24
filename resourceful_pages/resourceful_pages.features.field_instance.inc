@@ -128,7 +128,7 @@ function resourceful_pages_field_default_field_instances() {
     'bundle' => 'page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The university campus this page is associated with.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -412,7 +412,7 @@ function resourceful_pages_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 9,
     ),
   );
 
@@ -775,7 +775,7 @@ function resourceful_pages_field_default_field_instances() {
     'bundle' => 'page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Link to the previous location(s) of this information on the old site. Title is optional.',
+    'description' => 'Link to a previous location(s) of this information on an old version of the site. Title is optional.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -855,6 +855,7 @@ function resourceful_pages_field_default_field_instances() {
       'absolute_url' => 1,
       'attributes' => array(
         'class' => 'oldsite',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => 'nofollow',
         'target' => 'default',
@@ -864,13 +865,9 @@ function resourceful_pages_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
       'rel_remove' => 'default',
       'title' => 'optional',
-      'title_label_use_field_label' => FALSE,
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -882,7 +879,7 @@ function resourceful_pages_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 10,
     ),
   );
 
@@ -892,7 +889,7 @@ function resourceful_pages_field_default_field_instances() {
     'default_value' => NULL,
     'default_value_function' => '',
     'deleted' => 0,
-    'description' => 'Used to display a summary of other related pages. This should not be over-used, as the \'book\' navigation normally provides this context.',
+    'description' => 'Used to display a summary of other related pages. This does not normally need to be used, as the \'book\' navigation normally provides this context.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1301,7 +1298,7 @@ function resourceful_pages_field_default_field_instances() {
   t('Campus');
   t('Icon');
   t('Image');
-  t('Link to the previous location(s) of this information on the old site. Title is optional.');
+  t('Link to a previous location(s) of this information on an old version of the site. Title is optional.');
   t('List resources');
   t('Old URL');
   t('Page content');
@@ -1309,8 +1306,9 @@ function resourceful_pages_field_default_field_instances() {
   t('Related pages');
   t('Subjects');
   t('Tags');
+  t('The university campus this page is associated with.');
   t('Title');
-  t('Used to display a summary of other related pages. This should not be over-used, as the \'book\' navigation normally provides this context.');
+  t('Used to display a summary of other related pages. This does not normally need to be used, as the \'book\' navigation normally provides this context.');
 
   return $field_instances;
 }

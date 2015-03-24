@@ -274,7 +274,6 @@ function resourceful_pages_field_default_field_bases() {
         ),
         'target_bundles' => array(
           'page' => 'page',
-          'resource' => 'resource',
         ),
       ),
       'target_type' => 'node',

@@ -12,7 +12,7 @@ function resourceful_pages_taxonomy_default_vocabularies() {
     'campus' => array(
       'name' => 'Campus',
       'machine_name' => 'campus',
-      'description' => 'Tremough/Woodlane',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
