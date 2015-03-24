@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Resourceful Pages feature.
+ */
+
+include_once 'resourceful_pages.features.inc';
